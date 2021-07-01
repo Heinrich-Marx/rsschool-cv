@@ -4,3 +4,4 @@ My goal is to master the profession of a frontend developer, to get a huge amoun
 This is my first independent [landing page](https://github.com/Heinrich-Marx/myProject). I will soon upload more examples of works.  
 I finished courses on the bean max website, also took courses in the [python language](https://stepik.org/course/58852/syllabus).  
 My CodeWars level: 6 kyu. [link](https://www.codewars.com/users/dedemod)
+My English level: A2.

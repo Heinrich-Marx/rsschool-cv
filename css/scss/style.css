@@ -1,0 +1,96 @@
+.main-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 7fr;
+      grid-template-columns: 5fr 7fr;
+  max-width: 100%;
+}
+
+.main-section .section-left {
+  background-color: gray;
+}
+
+.main-section .section-left .my-page {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-section .section-left .my-page img {
+  max-width: 350px;
+  border-radius: 50%;
+}
+
+.main-section .section-left .contact-header {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main-section .section-left .contact .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 6px;
+  width: 150px;
+  background-color: black;
+  border-radius: 3px;
+}
+
+.main-section .section-left .contact-telegram-link a img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.main-section .section-left .contact-inst-link a img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.main-section .section-left .contact-gmail-link a img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.main-section .section-left .contact-github-link a img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.main-section .section-left .education .header {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main-section .section-left .education .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 6px;
+  width: 150px;
+  background-color: black;
+  border-radius: 3px;
+}
+
+.main-section .section-left .language .header {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main-section .section-left .language .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 6px;
+  width: 150px;
+  background-color: black;
+  border-radius: 3px;
+}
+
+.main-section .section-right .lang .image .css img {
+  max-width: 200px;
+}
+/*# sourceMappingURL=style.css.map */

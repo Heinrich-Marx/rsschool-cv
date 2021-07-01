@@ -1,0 +1,140 @@
+@mixin logo {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+@mixin line {
+    display: flex;
+    height: 6px;
+    width: 150px;
+    background-color: black;
+    border-radius: 3px;
+}
+
+@mixin title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.main-section {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    max-width: 100%;
+    .section-left {
+        background-color: gray;
+        .my-page {
+            margin-top: 80px;
+            display: flex;
+            justify-content: center;
+            img {
+                max-width: 350px;
+                border-radius: 50%;
+            }
+        }
+        .contact {
+            &-header {
+                @include title
+            }
+            .line {
+                @include line
+            }
+            &-phone {
+                &-word {}
+                &-number {
+                    a {}
+                }
+            }
+            &-telegram {
+                &-word {}
+                &-link {
+                    a {
+                        img {
+                            @include logo
+                        }
+                    }
+                }
+            }
+            &-inst {
+                &-word {}
+                &-link {
+                    a {
+                        img {
+                            @include logo
+                        }
+                    }
+                }
+            }
+            &-gmail {
+                &-word {}
+                &-link {
+                    a {
+                        img {
+                            @include logo
+                        }
+                    }
+                }
+            }
+            &-github {
+                &-word {}
+                &-link {
+                    a {
+                        img {
+                            @include logo
+                        }
+                    }
+                }
+            }
+        }
+        .education {
+            .header {
+                @include title
+            }
+            .line {
+                @include line
+            }
+            &-course {
+                &-header {}
+                &-text {}
+            }
+            &-university {
+                &-header {}
+                &-text {}
+            }
+        }
+        .language {
+            .header {
+                @include title
+            }
+            .line {
+                @include line
+            }
+            .english {}
+
+        }
+    }
+    .section-right {
+        .header {}
+        .profession {}
+        .profile {
+            h2 {}
+            .rline {}
+            .text {}
+        }
+        .lang {
+            h2 {}
+            .rline {}
+            .text {}
+            .image {
+                .html {}
+                .css {
+                    img {
+                        max-width: 200px;
+                    }
+                }
+                .js {}
+                .python {}
+            }
+        }
+    }
+}

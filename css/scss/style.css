@@ -90,6 +90,10 @@
   border-radius: 3px;
 }
 
+.main-section .section-right {
+  background-color: #988c98;
+}
+
 .main-section .section-right .lang .image .css img {
   max-width: 200px;
 }

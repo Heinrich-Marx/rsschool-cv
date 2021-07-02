@@ -1,13 +1,13 @@
 .main-section {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 5fr 7fr;
-      grid-template-columns: 5fr 7fr;
+  -ms-grid-columns: 4fr 7fr;
+      grid-template-columns: 4fr 7fr;
   max-width: 100%;
 }
 
 .main-section .section-left {
-  background-color: gray;
+  background-color: #c6bdcb;
 }
 
 .main-section .section-left .my-page {
@@ -25,9 +25,14 @@
   border-radius: 50%;
 }
 
+.main-section .section-left .contact {
+  margin: 100px 50px 100px 50px;
+}
+
 .main-section .section-left .contact-header {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .main-section .section-left .contact .line {
@@ -35,9 +40,36 @@
   display: -ms-flexbox;
   display: flex;
   height: 6px;
-  width: 150px;
+  width: 300px;
   background-color: black;
   border-radius: 3px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.main-section .section-left .contact .wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 5fr;
+      grid-template-columns: 5fr 5fr;
+  grid-gap: 20px;
+  margin-top: 50px;
+  justify-items: center;
+}
+
+.main-section .section-left .contact-phone {
+  display: block;
+}
+
+.main-section .section-left .contact-phone-word {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.main-section .section-left .contact-phone-number a {
+  color: #000;
 }
 
 .main-section .section-left .contact-telegram-link a img {
@@ -60,9 +92,14 @@
   border-radius: 50%;
 }
 
+.main-section .section-left .education {
+  margin-top: 50px;
+}
+
 .main-section .section-left .education .header {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .main-section .section-left .education .line {
@@ -70,13 +107,39 @@
   display: -ms-flexbox;
   display: flex;
   height: 6px;
-  width: 150px;
+  width: 300px;
   background-color: black;
   border-radius: 3px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.main-section .section-left .education-course-header {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.main-section .section-left .education-course-text {
+  margin: 10px 50px 20px 30px;
+  font-size: 16px;
+}
+
+.main-section .section-left .education-university-header {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.main-section .section-left .education-university-text {
+  margin: 10px 50px 20px 30px;
+  font-size: 16px;
+}
+
+.main-section .section-left .language {
+  margin-top: 50px;
 }
 
 .main-section .section-left .language .header {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: bold;
 }
 
@@ -85,16 +148,111 @@
   display: -ms-flexbox;
   display: flex;
   height: 6px;
-  width: 150px;
+  width: 300px;
   background-color: black;
   border-radius: 3px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.main-section .section-left .language .english {
+  font-size: 16px;
+}
+
+.main-section .section-left .language .english span {
+  font-weight: 700;
 }
 
 .main-section .section-right {
-  background-color: #988c98;
+  margin: 0px 0px;
+  background-color: #d3c9d8;
+}
+
+.main-section .section-right .wrapper {
+  margin: 0px 100px;
+}
+
+.main-section .section-right .header {
+  margin: 100px 0px 50px 50px;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.main-section .section-right .profession {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.main-section .section-right .profile h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.main-section .section-right .profile .rline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 6px;
+  width: 300px;
+  background-color: black;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.main-section .section-right .profile .text {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.main-section .section-right .lang h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.main-section .section-right .lang .rline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 6px;
+  width: 300px;
+  background-color: black;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.main-section .section-right .lang .text {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.main-section .section-right .lang .image {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 5fr;
+      grid-template-columns: 5fr 5fr;
+  grid-gap: 60px;
+  margin-top: 50px;
+  justify-items: center;
+}
+
+.main-section .section-right .lang .image .html img {
+  max-width: 200px;
 }
 
 .main-section .section-right .lang .image .css img {
+  max-width: 200px;
+}
+
+.main-section .section-right .lang .image .js img {
+  max-width: 200px;
+}
+
+.main-section .section-right .lang .image .python img {
   max-width: 200px;
 }
 /*# sourceMappingURL=style.css.map */

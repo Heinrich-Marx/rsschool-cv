@@ -410,7 +410,19 @@ html {
                 max-width: 250px;
                 display: block;
                 border-radius: 10px;
+                margin: 0 auto;
               }
+            }
+            .title_project {
+              margin-top: 5px;
+              margin-top: 3px;
+              font-size: 18px;
+              text-align: center;
+            }
+            .subtitle {
+              margin: 3px 10px;
+              font-size: 14px;
+              text-align: center;
             }
           }
         }
@@ -426,6 +438,7 @@ html {
         @include line;
       }
       .video {
+        text-align: center;
         iframe {
           width: 560px;
           height: 315px;

@@ -652,6 +652,20 @@ html {
   max-width: 250px;
   display: block;
   border-radius: 10px;
+  margin: 0 auto;
+}
+
+.wrapper_section .section_main .my_project_wrapper .sub_wrapper ul li .title_project {
+  margin-top: 5px;
+  margin-top: 3px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.wrapper_section .section_main .my_project_wrapper .sub_wrapper ul li .subtitle {
+  margin: 3px 10px;
+  font-size: 14px;
+  text-align: center;
 }
 
 .wrapper_section .section_main .my_video {
@@ -704,6 +718,10 @@ html {
   .wrapper_section .section_main .my_video .line {
     width: 200px;
   }
+}
+
+.wrapper_section .section_main .my_video .video {
+  text-align: center;
 }
 
 .wrapper_section .section_main .my_video .video iframe {

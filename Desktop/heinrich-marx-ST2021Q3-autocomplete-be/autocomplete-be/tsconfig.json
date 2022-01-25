@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+      "outDir": "./",
+      "sourceMap": true,
+      "strict": true,
+      "noImplicitAny": true,
+      "moduleResolution": "node",
+      "target": "esnext",
+      "allowJs": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "noPropertyAccessFromIndexSignature": true,
+      "noUncheckedIndexedAccess": false,
+      "strictNullChecks": true,
+  },
+  "include": [
+      "./**/*"
+  ],
+  "exclude": [
+      "./node_modules"
+  ],
+}

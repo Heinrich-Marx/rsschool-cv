@@ -70,9 +70,9 @@ class CustomLodash {
   }
   compact(arr) {
     if (!Array.isArray(arr)) return [];
-    const newArr = [];
-    for (let i of arr) !!i === true ? this.customPush(newArr, i) : '';
-    return newArr;
+    return this.filter(arr, function (e) {
+      return e;
+    });
   }
   drop(arr, size = 1) {
     const newArr = this.customSlice(arr, size, arr.length);
@@ -95,21 +95,25 @@ class CustomLodash {
   filter(arr, predicate = this.identity) {
     if (predicate === this.identity) return this.identity(arr);
     if (!Array.isArray(arr)) return [];
+    const newArr = [];
     for (let i = 0; i < arr.length; i++) {
       if (typeof predicate === 'function') {
-        if (predicate(arr[i])) return arr[i];
+        if (predicate(arr[i])) this.customPush(newArr, arr[i]);
       } else if (typeof predicate === 'object') {
         if (Array.isArray(predicate)) {
           if (predicate.length <= 1) return undefined;
-          if (arr[i][predicate[0]] === predicate[1]) return arr[i];
+          if (arr[i][predicate[0]] === predicate[1])
+            this.customPush(newArr, arr[i]);
         } else {
           let count = 0;
           for (let key in arr[i]) if (predicate[key] === arr[i][key]) count++;
-          if (count === Object.keys(predicate).length) return arr[i];
+          if (count === Object.keys(predicate).length)
+            this.customPush(newArr, arr[i]);
         }
-      } else if (arr[i][predicate]) return arr[i];
+      } else if (arr[i][predicate]) this.customPush(newArr, arr[i]);
     }
-    return undefined;
+    if (newArr.length > 0) return newArr;
+    else return undefined;
   }
   find(collection, predicate = this.identity, index = 0) {
     if (predicate === this.identity) return this.identity(collection);
@@ -216,3 +220,6 @@ class CustomLodash {
     }
   }
 }
+
+const load = new CustomLodash();
+load.compact([0, 1, 4, 'a', '', false, undefined, 2]);
